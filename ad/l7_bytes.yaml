@@ -1,11 +1,11 @@
 apiVersion: projectcalico.org/v3
- kind: GlobalAlert
- metadata:
-   name: ad-l7-bytes
- spec:
-   description: "Sample"
-   summary: "Sample l7 bytes anomaly detection (sec/perf)"
-   type: AnomalyDetection
-   detector: 
-     name: l7_bytes
-   severity: 100
+kind: GlobalAlert
+metadata:
+ name: ad-l7-bytes
+spec:
+ description: "Sample"
+ summary: "Sample l7 bytes anomaly detection (sec/perf)"
+ type: AnomalyDetection
+ detector: 
+   name: l7_bytes
+ severity: 100
