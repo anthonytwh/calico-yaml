@@ -1,0 +1,11 @@
+ apiVersion: projectcalico.org/v3
+ kind: GlobalAlert
+ metadata:
+   name: ad-time-series-dms
+ spec:
+   description: "Sample"
+   summary: "Sample time-series dns anomaly detection (performance)"
+   type: AnomalyDetection
+   detector: 
+     name: time_series_dns
+   severity: 100

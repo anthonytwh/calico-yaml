@@ -1,0 +1,11 @@
+ apiVersion: projectcalico.org/v3
+ kind: GlobalAlert
+ metadata:
+   name: ad-generic-flows
+ spec:
+   description: "Sample"
+   summary: "Sample generic flows anomaly detection (performance)"
+   type: AnomalyDetection
+   detector: 
+     name: generic_flows
+   severity: 100

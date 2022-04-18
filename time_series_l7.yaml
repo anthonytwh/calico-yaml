@@ -1,0 +1,11 @@
+ apiVersion: projectcalico.org/v3
+ kind: GlobalAlert
+ metadata:
+   name: ad-time-series-l7
+ spec:
+   description: "Sample"
+   summary: "Sample time-series l7 anomaly detection (performance)"
+   type: AnomalyDetection
+   detector: 
+     name: time_series_l7
+   severity: 100

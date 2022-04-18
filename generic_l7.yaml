@@ -1,0 +1,11 @@
+ apiVersion: projectcalico.org/v3
+ kind: GlobalAlert
+ metadata:
+   name: ad-generic-l7
+ spec:
+   description: "Sample"
+   summary: "Sample generic l7 anomaly detection (performance)"
+   type: AnomalyDetection
+   detector: 
+     name: generic_l7
+   severity: 100

@@ -1,0 +1,11 @@
+ apiVersion: projectcalico.org/v3
+ kind: GlobalAlert
+ metadata:
+   name: ad-ptime-series-flows
+ spec:
+   description: "Sample"
+   summary: "Sample time-series flows anomaly detection (performance)"
+   type: AnomalyDetection
+   detector: 
+     name: time_series_flows
+   severity: 100

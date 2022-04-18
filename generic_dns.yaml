@@ -1,0 +1,11 @@
+ apiVersion: projectcalico.org/v3
+ kind: GlobalAlert
+ metadata:
+   name: ad-generic-dns
+ spec:
+   description: "Excessive values in fields of DNS log."
+   summary: "Sample generic dns anomaly detection (performance)"
+   type: AnomalyDetection
+   detector: 
+     name: generic_dns
+   severity: 100
