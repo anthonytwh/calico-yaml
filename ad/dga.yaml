@@ -1,0 +1,11 @@
+ apiVersion: projectcalico.org/v3
+ kind: GlobalAlert
+ metadata:
+   name: ad-dga-domains
+ spec:
+   description: "Sample"
+   summary: "Sample DGA domain detection"
+   type: AnomalyDetection
+   detector: 
+     name: dga
+   severity: 100

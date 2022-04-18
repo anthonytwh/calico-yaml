@@ -1,0 +1,11 @@
+ apiVersion: projectcalico.org/v3
+ kind: GlobalAlert
+ metadata:
+   name: ad-ip-sweep
+ spec:
+   description: "Sample"
+   summary: "Sample ip sweep anomaly detection"
+   type: AnomalyDetection
+   detector: 
+     name: ip_sweep
+   severity: 100

@@ -1,0 +1,11 @@
+ apiVersion: projectcalico.org/v3
+ kind: GlobalAlert
+ metadata:
+   name: ad-http-conn-spike
+ spec:
+   description: "Sample"
+   summary: "Sample http connection spike anomaly detection"
+   type: AnomalyDetection
+   detector: 
+     name: http_connection_spike
+   severity: 100
