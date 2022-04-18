@@ -1,0 +1,11 @@
+apiVersion: projectcalico.org/v3
+ kind: GlobalAlert
+ metadata:
+   name: ad-process-restarts
+ spec:
+   description: "Sample"
+   summary: "Sample process restarts anomaly detection (sec/perf)"
+   type: AnomalyDetection
+   detector: 
+     name: process_restarts
+   severity: 100

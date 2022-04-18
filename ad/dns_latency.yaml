@@ -1,0 +1,11 @@
+apiVersion: projectcalico.org/v3
+ kind: GlobalAlert
+ metadata:
+   name: ad-dns-latency
+ spec:
+   description: "Sample"
+   summary: "Sample dns latency anomaly detection (sec/perf)"
+   type: AnomalyDetection
+   detector: 
+     name: dns_latency
+   severity: 100
