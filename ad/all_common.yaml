@@ -1,0 +1,35 @@
+apiVersion: projectcalico.org/v3
+kind: GlobalAlert
+metadata:
+ name: ad-dns-latency
+spec:
+ description: "Sample"
+ summary: "Sample dns latency anomaly detection (sec/perf)"
+ type: AnomalyDetection
+ detector: 
+   name: dns_latency
+ severity: 100
+---
+apiVersion: projectcalico.org/v3
+kind: GlobalAlert
+metadata:
+ name: ad-l7-latency
+spec:
+ description: "Sample"
+ summary: "Sample l7 latency anomaly detection (sec/perf)"
+ type: AnomalyDetection
+ detector: 
+   name: l7_latency
+ severity: 100
+---
+apiVersion: projectcalico.org/v3
+kind: GlobalAlert
+metadata:
+ name: ad-process-restarts
+spec:
+ description: "Sample"
+ summary: "Sample process restarts anomaly detection (sec/perf)"
+ type: AnomalyDetection
+ detector: 
+   name: process_restarts
+ severity: 100

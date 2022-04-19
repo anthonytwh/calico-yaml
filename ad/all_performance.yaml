@@ -1,0 +1,71 @@
+apiVersion: projectcalico.org/v3
+kind: GlobalAlert
+metadata:
+ name: ad-generic-dns
+spec:
+ description: "Excessive values in fields of DNS log."
+ summary: "Sample generic dns anomaly detection (performance)"
+ type: AnomalyDetection
+ detector: 
+   name: generic_dns
+ severity: 100
+---
+apiVersion: projectcalico.org/v3
+kind: GlobalAlert
+metadata:
+ name: ad-generic-flows
+spec:
+ description: "Sample"
+ summary: "Sample generic flows anomaly detection (performance)"
+ type: AnomalyDetection
+ detector: 
+   name: generic_flows
+ severity: 100
+---
+apiVersion: projectcalico.org/v3
+kind: GlobalAlert
+metadata:
+ name: ad-generic-l7
+spec:
+ description: "Sample"
+ summary: "Sample generic l7 anomaly detection (performance)"
+ type: AnomalyDetection
+ detector: 
+   name: generic_l7
+ severity: 100
+---
+apiVersion: projectcalico.org/v3
+kind: GlobalAlert
+metadata:
+ name: ad-time-series-dms
+spec:
+ description: "Sample"
+ summary: "Sample time-series dns anomaly detection (performance)"
+ type: AnomalyDetection
+ detector: 
+   name: time_series_dns
+ severity: 100
+---
+ apiVersion: projectcalico.org/v3
+kind: GlobalAlert
+metadata:
+ name: ad-ptime-series-flows
+spec:
+ description: "Sample"
+ summary: "Sample time-series flows anomaly detection (performance)"
+ type: AnomalyDetection
+ detector: 
+   name: time_series_flows
+ severity: 100
+---
+apiVersion: projectcalico.org/v3
+kind: GlobalAlert
+metadata:
+ name: ad-time-series-l7
+spec:
+ description: "Sample"
+ summary: "Sample time-series l7 anomaly detection (performance)"
+ type: AnomalyDetection
+ detector: 
+   name: time_series_l7
+ severity: 100

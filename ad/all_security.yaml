@@ -1,0 +1,83 @@
+apiVersion: projectcalico.org/v3
+kind: GlobalAlert
+metadata:
+ name: ad-dga-domains
+spec:
+ description: "Sample"
+ summary: "Sample DGA domain detection"
+ type: AnomalyDetection
+ detector: 
+   name: dga
+ severity: 100
+---
+apiVersion: projectcalico.org/v3
+kind: GlobalAlert
+metadata:
+ name: ad-http-conn-spike
+spec:
+ description: "Sample"
+ summary: "Sample http connection spike anomaly detection"
+ type: AnomalyDetection
+ detector: 
+   name: http_connection_spike
+ severity: 100
+---
+apiVersion: projectcalico.org/v3
+kind: GlobalAlert
+metadata:
+ name: ad-http-resp
+spec:
+ description: "Sample"
+ summary: "Sample http response anomaly detection"
+ type: AnomalyDetection
+ detector: 
+   name: http_response_codes
+ severity: 100 
+---
+piVersion: projectcalico.org/v3
+kind: GlobalAlert
+metadata:
+ name: ad-http-verbs
+spec:
+ description: "Sample"
+ summary: "Sample http methods anomaly detection"
+ type: AnomalyDetection
+ detector: 
+   name: http_verbs
+ severity: 100 
+---
+apiVersion: projectcalico.org/v3
+kind: GlobalAlert
+metadata:
+ name: ad-ip-sweep
+spec:
+ description: "Sample"
+ summary: "Sample ip sweep anomaly detection"
+ type: AnomalyDetection
+ detector: 
+   name: ip_sweep
+ severity: 100
+---
+apiVersion: projectcalico.org/v3
+kind: GlobalAlert
+metadata:
+name: ad-l7-bytes
+spec:
+description: "Sample"
+summary: "Sample l7 bytes anomaly detection (sec/perf)"
+type: AnomalyDetection
+detector: 
+ name: l7_bytes
+severity: 100 
+---
+apiVersion: projectcalico.org/v3
+kind: GlobalAlert
+metadata:
+ name: ad-port-scan
+spec:
+ description: "Sample"
+ summary: "Sample port-scan anomaly detection"
+ type: AnomalyDetection
+ detector: 
+   name: port_scan
+ severity: 100
